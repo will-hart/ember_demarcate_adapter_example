@@ -1,0 +1,17 @@
+body, html { margin: 0; font-family: 'Monda', sans-serif; }
+div { padding: 10px;}
+
+.editor { position: fixed; right: 50%; left:0; top:0; bottom:0; padding-left: 80px;}
+
+.editor div { padding-left: 0; }
+
+.output-wrapper { width: 50%; height: 100%; position: fixed; right:0; top:0; bottom:0; }
+
+.markdown, .html{ position: fixed; right: 0; left: 50%; font-size: 0.9em; overflow-y: auto; }
+
+.markdown { top: 0; bottom: 50%; border-bottom: 3px solid #444; background: #ccc; color: #444; }
+.html { top: 50%; bottom: 0; color: white; background: black;}
+
+.introduction { max-width: 960px; min-width: 300px; margin: 1em auto; }
+
+.warning { background: #FCFFD7; border: 1px solid #FFA500; color: #FFA500; padding: 1em; font-size: 0.9em; margin-top: 3em; }

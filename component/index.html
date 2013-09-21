@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ember DemarcateEditor View Demo</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../view/css/demarcate.css">
+        <link rel="stylesheet" href="../view/css/styles.css">
+    </head>
+
+    <body>
+    
+        <script type="text/x-handlebars" id="components/demarcate-editor">
+            {{editorHTML}}
+        </script>
+        
+        <script type="text/x-handlebars" id="application">
+            <div class="editor">
+            {{demarcate-editor value=editorHTML markdown=markdown}}
+            </div>
+            
+            <div class="output-wrapper">
+                <div class="markdown">
+                    {{breaklines markdown}}
+                </div>
+                <div class="html">
+                    {{breaklines editorHTML}}
+                </div>
+            </div>
+        </script>
+
+        <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+        <script src="../view/js/keys.min.js" type="text/javascript"></script>
+        <script src="../view/js/demarcate.js" type="text/javascript"></script>
+        <script src="../view/js/handlebars.min.js" type="text/javascript"></script>
+        <script src="../view/js/ember.min.js" type="text/javascript"></script>
+
+        <script src="js/ember.demarcateeditorcomponent.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        
+    </body>
+</html>
